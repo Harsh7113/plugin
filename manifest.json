@@ -1,0 +1,41 @@
+{
+  "name": "Database Retrieval Plugin",
+  "version": "1.0.0",
+  "description_for_model": "A plugin for ChatGPT that accesses a database and create report for user.",
+  "author": "Harshvardhan Tripathi",
+  "contact_email": "tripathi.harsh07113@gmail.com",
+  "auth": {
+    "type": "none"
+  },
+  "api" : {
+    "type" : "openapi",
+    "url": "http://localhost:8000/Plugin/api4.py"
+    
+  },
+  "entrypoint": "plugin.py",
+  "dependencies": {
+      "python" : ">3.6",
+      "fastapi" : "^0.92.0",
+      "uvicorn" : "^0.20.0",
+      "openai" : "^0.27.5",
+      "numpy" : "^1.24.2",
+      "docx2txt" : "^0.8",
+      "PyPDF2" : "^3.0.1",
+      "arrow" : "^1.2.3",
+      "chromadb" : "^0.3.25",
+      "pinecone-client" : "^2.1.0",
+      "weaviate-client" : "^3.12.0",
+      "pymilvus" : "^2.2.2",
+      "redis" : "4.5.4",
+      "supabase" : "^1.0.2",
+      "psycopg2" : "^2.9.5",
+      "llama-index" : "0.5.4",
+      "pymongo": "^3.12.0",
+      "loguru" : "^0.7.0",
+      "pgvector" : "^0.1.7"
+      },
+  "permissions": [
+    "database:read",
+    "database:write"
+  ]
+}
