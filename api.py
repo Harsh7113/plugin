@@ -42,13 +42,13 @@ class QueryRequest(BaseModel):
 class UpsertRequest(BaseModel):
     data: dict
     table_name: str
-
+#enter your database info here
 db = Database(
-    host="localhost",
-    port="3306",
-    username="root",
-    password="484661",
-    database="school"
+    host="here",
+    port="here",
+    username="here",
+    password="here",
+    database="here"
 )
 
 @app.get("/query")
