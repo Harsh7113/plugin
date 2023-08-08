@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 import requests
 import uvicorn
 
-openai.api_key = "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"
+openai.api_key = "YOUR API KEY"
 completion_model = "1.0.0"
 api_url = "http://localhost:8000"   
 
